@@ -1,0 +1,146 @@
+@mixin flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+header {
+    color: black;
+    background-color: #73d198;
+    width: 100vw;
+    border-radius: 0 0 50% 50%;
+    padding-bottom: 100px;
+
+    nav {
+        @include flex(space-between, center);
+        padding: 20px 100px;
+    
+        h1{
+            font-size: 32px;
+        }
+        img {
+            cursor: pointer;
+            width: 30px;
+        }
+    }
+
+    #header-content {
+        padding: 100px 0 50px 0;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+
+        h1 {
+            padding-bottom: 30px;
+            font-size: 42px;
+        }
+        p {
+            font-size: 22px;
+        }
+    }
+
+    #about {
+        text-align: center;
+        img {
+            width: 40px;
+        }
+    }
+}
+
+main {
+    padding: 80px 0 200px 0;
+
+    #main-content {
+        margin: auto;
+
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            padding-bottom: 30px;
+        }
+        #services {
+            width: 100%;
+            @include flex(center, center);
+            gap: 100px;
+            flex-wrap: wrap;
+
+            div {
+                padding: 30px;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                flex-direction: column;
+                @include flex(space-between, start);
+                flex-wrap: wrap;
+                width: 500px;
+                min-height: 220px;
+                
+                h2 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 18px;
+                    padding: 20px 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    border-radius: 30px;
+                    font-size: 18px;
+                    padding: 10px 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #73d198;
+    padding: 20px 60px;
+    font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+    header {
+        nav {
+            padding: 20px 20px;
+        }
+        #header-content {
+            padding: 50px 0;
+    
+            h1 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    main {
+        h1 {  
+            font-size: 26px;
+        }  
+        #main-content {
+            width: 90%;
+            #services {
+                gap: 20px;
+                div {
+                    width: 90%;
+                }
+            }
+        }
+    }
+    
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+.grey {
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+.green {
+    background-color: #73d198;
+}

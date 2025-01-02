@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkQR</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/qrcode/qrcode.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="btn">MyQR</a>
+        <img src="../Images/dark.svg" alt="DarkMode" id="darkMode">
+    </nav>
+    <main>
+        <div class="input-section">
+            <h2>Enter the URL</h2>
+            <input type="text" id="url" placeholder="https://www.example.com">
+            <p id="error">Invalid URL!</p>
+            <button id="generate" class="btn green">Generate</button>
+        </div>
+        <div class="output-section">
+            <h2>Your QR Code</h2>
+            <div id="qrcode">
+                <img src="" alt="QR Code" id="qr">
+                <button id="download" class="btn green">Download</button>
+            </div>
+        </div>
+    </main>
+    <script src="qrcode.js"></script>
+</body>
+</html>

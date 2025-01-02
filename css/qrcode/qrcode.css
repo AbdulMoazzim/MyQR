@@ -1,0 +1,98 @@
+nav {
+  background-color: #73d198;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+}
+nav img {
+  cursor: pointer;
+  width: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 80%;
+  padding: 50px 0;
+  margin: auto;
+  flex-wrap: wrap;
+}
+main .input-section, main .output-section {
+  width: 500px;
+  min-height: 250px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+main .input-section h2, main .output-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+main .input-section p, main .output-section p {
+  display: none;
+  color: rgb(219, 82, 82);
+  font-size: 14px;
+  padding: 10px 0;
+}
+main .input-section button, main .output-section button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin: 20px 0;
+}
+main .input-section input[type=text], main .output-section input[type=text] {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+main .input-section #qrcode, main .output-section #qrcode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main .input-section #qrcode img, main .output-section #qrcode img {
+  visibility: hidden;
+  max-width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.grey {
+  background-color: rgb(71, 71, 71);
+  color: white;
+}
+
+.green {
+  background-color: #73d198;
+}
+
+.urlDark {
+  background-color: black;
+  color: white;
+}
+.urlDark::placeholder {
+  color: white;
+}

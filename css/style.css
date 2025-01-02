@@ -1,0 +1,131 @@
+header {
+  color: black;
+  background-color: #73d198;
+  width: 100vw;
+  border-radius: 0 0 50% 50%;
+  padding-bottom: 100px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+}
+header nav h1 {
+  font-size: 32px;
+}
+header nav img {
+  cursor: pointer;
+  width: 30px;
+}
+header #header-content {
+  padding: 100px 0 50px 0;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+header #header-content h1 {
+  padding-bottom: 30px;
+  font-size: 42px;
+}
+header #header-content p {
+  font-size: 22px;
+}
+header #about {
+  text-align: center;
+}
+header #about img {
+  width: 40px;
+}
+
+main {
+  padding: 80px 0 200px 0;
+}
+main #main-content {
+  margin: auto;
+}
+main #main-content h1 {
+  text-align: center;
+  font-size: 42px;
+  padding-bottom: 30px;
+}
+main #main-content #services {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+main #main-content #services div {
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  width: 500px;
+  min-height: 220px;
+}
+main #main-content #services div h2 {
+  font-size: 26px;
+}
+main #main-content #services div p {
+  font-size: 18px;
+  padding: 20px 0;
+}
+main #main-content #services div a {
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: white;
+}
+
+footer {
+  background-color: #73d198;
+  padding: 20px 60px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    padding: 20px 20px;
+  }
+  header #header-content {
+    padding: 50px 0;
+  }
+  header #header-content h1 {
+    font-size: 26px;
+  }
+  header #header-content p {
+    font-size: 16px;
+  }
+  main h1 {
+    font-size: 26px;
+  }
+  main #main-content {
+    width: 90%;
+  }
+  main #main-content #services {
+    gap: 20px;
+  }
+  main #main-content #services div {
+    width: 90%;
+  }
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.grey {
+  background-color: rgb(71, 71, 71);
+  color: white;
+}
+
+.green {
+  background-color: #73d198;
+}
